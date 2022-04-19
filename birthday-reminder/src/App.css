@@ -1,5 +1,68 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .container{
   text-align: center;
   background-color: white;
-  width: 70vw;
+  width: 500px;
+  min-height: 700px;
+  margin: 30px 10px;
+}
+
+.img-container{
+  height: 50px;
+  width: 50px;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dis-pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.list-con{
+  min-height: 500px;
+  padding: 0;
+}
+
+.list-item{
+  height: 100px;
+}
+
+.profile-con{
+  width: 100%;
+  display: flex;
+}
+
+li{
+  list-style: none;
+}
+
+.list-item{
+  display: flex;
+}
+
+.left-con{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.profile-info{
+  flex: 2;
+  text-align: left;
+  padding-left: 30px;
 }
