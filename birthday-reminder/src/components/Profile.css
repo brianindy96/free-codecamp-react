@@ -1,3 +1,47 @@
-li{
-    list-style: none;
+.list-item{
+    height: 100px;
+    display: flex;
+    border-bottom: 1px solid lightgrey;
 }
+
+.left-con{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container{
+    height: 50px;
+    width: 50px;
+}
+  
+
+.profile-info{
+  flex: 2;
+  text-align: left;
+  padding-left: 30px;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dis-pic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile-con{
+  width: 100%;
+  display: flex;
+}
+
+li{
+  list-style: none;
+}
+

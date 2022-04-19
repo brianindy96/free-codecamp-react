@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react'
-
+import Profile from "./components/Profile"
 
 function App() {
   const lists = [
@@ -40,9 +40,8 @@ function App() {
       age: "24 years",
       image: "https://images.unsplash.com/photo-1498090890888-3df9298e7b84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
     },
-
   ]
-    
+
 
   return (
     <div className="App">
@@ -50,21 +49,8 @@ function App() {
         <header>
           <h1>{lists.length} Birthday todays</h1>
         </header>
- 
         <ul className="list-con">
-              {lists.map((list) => (
-                <li key={list.id} className="list-item">
-                  <div className="left-con">
-                    <div className="img-container">
-                      <img src={list.image} alt="profile image"></img>
-                    </div>
-                  </div>
-                  <div className="profile-info">
-                    <h3>{list.name}</h3>
-                    <p>{list.age}</p>
-                  </div>
-                </li>
-              ))}
+          <Profile lists={lists} />
         </ul>
       </div>
     </div>
